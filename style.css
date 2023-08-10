@@ -1,0 +1,472 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: Android;
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+    font-weight:normal;
+}
+
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue', sans-serif;
+    --fonte-android:'Android',cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo:after{
+    content: '\00A0\1F517';
+
+}
+header{
+    background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque) ;
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+            }
+
+header > p{
+    color: white;
+    text-align: center;
+    font-family:var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav{
+    background-color: var(--cor5);
+        padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+            color: var(--cor5);
+            font-family: var(--fonte-android);
+            font-weight: normal;
+            font-size: 1.8em;
+        }
+
+main h2{
+            color: var(--cor4);
+            font-family: var(--fonte-android);
+            font-size: 1.3em;
+            font-weight: normal;
+            background-image: linear-gradient(to right,var(--cor1),transparent);
+            text-indent: 10px;
+}
+
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align:justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bolder;
+    
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    }
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+
+main img{
+        width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display:block;
+    margin:auto;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+        background-color: var(--cor1);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    background-color:var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+      
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+        
+        
+
+
+
+/*
+    #c5ebd6
+    #83e1ad
+    #3ddc84
+    #2fa866
+    #1a5c37
+    #063d1e
+*/
+
+/*
+Este código CSS é usado para estilizar uma página web. Vamos analisar cada parte do código para entender o que está acontecendo:
+
+Definição de caracteres e importação de fontes:
+
+@charset "UTF-8";: Define o conjunto de caracteres UTF-8 para a folha de estilos.
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');: Importa a fonte "Bebas Neue" do Google Fonts.
+Definição de variáveis de cores e fontes:
+
+:root: Define as variáveis CSS que serão utilizadas para armazenar cores e fontes a serem usadas em todo o documento.
+Reset de margens e preenchimentos:
+
+*: Seletor universal para aplicar um reset de margens e preenchimentos em todos os elementos HTML.
+Estilos do corpo da página:
+
+body: Define o fundo da página com a cor da variável --cor0 e a fonte para ser a padrão definida pela variável --fonte-padrao.
+Estilos do cabeçalho (header):
+
+header: Define o cabeçalho da página com um gradiente de cores, com a cor mais clara sendo --cor3 e a cor mais escura --cor5.
+header > h1: Estiliza o título principal do cabeçalho com cor branca, usando a fonte --fonte-destaque, tamanho de fonte 3em, alinhamento centralizado e uma sombra de texto.
+header > p: Estiliza um parágrafo dentro do cabeçalho com cor branca, usando a fonte --fonte-padrao, tamanho de fonte 1.2em, alinhamento centralizado, largura máxima de 600px e sombra de texto.
+Estilos da navegação (nav):
+
+nav: Define a barra de navegação com fundo da cor --cor5, preenchimento de 10px e sombra.
+nav > a: Estiliza os links na barra de navegação com a cor --cor1, preenchimento de 10px, texto em negrito, borda arredondada e uma transição de cor suave ao passar o mouse sobre os links.
+nav > a:hover: Estiliza o efeito ao passar o mouse sobre os links da navegação.
+Estilos da seção principal (main):
+
+main: Define o conteúdo principal com largura mínima de 300px e máxima de 1000px, alinhado ao centro, fundo branco, sombra e bordas arredondadas.
+main h1: Estiliza os títulos de nível 1 dentro da seção principal com a cor --cor5, usando a fonte --fonte-android e tamanho de fonte 1.8em.
+main h2: Estiliza os títulos de nível 2 dentro da seção principal com a cor --cor4, usando a fonte --fonte-android, tamanho de fonte 1.3em, e um plano de fundo com gradiente horizontal da cor --cor1 até transparente.
+main p: Estiliza os parágrafos dentro da seção principal com margens, alinhamento justificado, recuo no texto, tamanho de fonte 1em e altura de linha 2em.
+main strong: Estiliza elementos de texto em negrito dentro da seção principal com a cor --cor4 e peso de fonte bolder.
+main a: Estiliza links dentro da seção principal com a cor do texto --cor5, plano de fundo --cor1 e preenchimento 2px 6px.
+main a:hover: Estiliza o efeito ao passar o mouse sobre os links na seção principal.
+Estilos da seção de vídeo (div.video):
+
+div.video: Define a seção de vídeo com fundo na cor --cor5, margem inferior e preenchimento, e uma proporção de aspecto fixa usando o truque de "padding-bottom" para criar espaço para o vídeo.
+div.video > iframe: Define o vídeo dentro da seção de vídeo usando um iframe com posição absoluta e preenchimento, fazendo-o ocupar todo o espaço disponível.
+Estilos da barra lateral (aside):
+
+aside: Define a barra lateral com fundo na cor --cor1, preenchimento e bordas arredondadas.
+aside > h3: Estiliza os títulos de nível 3 dentro da barra lateral com fundo na cor --cor4, cor do texto branco, preenchimento e margens negativas para criar um efeito de aba.
+aside > ul: Estiliza as listas não ordenadas dentro da barra lateral, usando um marcador personalizado (um ✔) e dividindo a lista em duas colunas.
+Estilos do rodapé (footer):
+
+footer: Define o rodapé com fundo na cor --cor5, cor do texto branco, alinhamento centralizado, tamanho de fonte 0.8em e preenchimento.
+footer a: Estiliza os links dentro do rodapé com cor branca e negrito.
+footer a:hover: Estiliza o efeito ao passar o mouse sobre os links no rodapé.
+Comentários:
+No final do arquivo, há uma lista de cores comentadas, possivelmente usada para referência ou futura edição.
+Em resumo, esse código CSS define estilos para um layout de página web, incluindo o cabeçalho, navegação, conteúdo principal, barra lateral e rodapé. Ele usa variáveis para armazenar cores e fontes, facilitando a manutenção e a alteração global dos estilos em toda a página.
+/*
+
+/* Definição de caracteres e importação de fontes */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Definição de fontes personalizadas */
+@font-face {
+    font-family: Android;
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+    font-weight:normal;
+}
+
+/* Definição das variáveis de cores e fontes */
+:root{
+    --cor0:#c5ebd6;    /* Comentário: Cor de fundo principal */
+    --cor1:#83e1ad;    /* Comentário: Cor para links na barra de navegação */
+    --cor2:#3ddc84;    /* Comentário: Cor X */
+    --cor3:#2fa866;    /* Comentário: Cor mais clara do gradiente do cabeçalho */
+    --cor4:#1a5c37;    /* Comentário: Cor para texto em negrito */
+    --cor5:#063d1e;    /* Comentário: Cor mais escura do gradiente do cabeçalho */
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;         /* Comentário: Fonte padrão para o corpo do texto */
+    --fonte-destaque:'Bebas Neue', sans-serif;                    /* Comentário: Fonte destacada para títulos */
+    --fonte-android:'Android',cursive;                           /* Comentário: Fonte personalizada 'Android' */
+}
+
+/* Reset de margens e preenchimentos */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilos do corpo da página */
+body{
+    background-color:var(--cor0);                   /* Fundo principal da página */
+    font-family: var(--fonte-padrao);               /* Fonte padrão para o corpo do texto */
+}
+
+/* Estilos para links externos */
+a.externo:after{
+    content: '\00A0\1F517';                         /* Comentário: Adiciona um emoji após os links externos */
+}
+
+/* Estilos do cabeçalho */
+header{
+    background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));    /* Gradiente de cores para o cabeçalho */
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque) ;
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);                          /* Sombra de texto */
+}
+
+header > p{
+    color: white;
+    text-align: center;
+    font-family:var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);                            /* Sombra de texto */
+}
+
+/* Estilos da barra de navegação */
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);                             /* Sombra */
+}
+
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);                                            /* Efeito ao passar o mouse sobre os links da navegação */
+    color: var(--cor5);
+}
+
+/* Estilos do conteúdo principal */
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);                           /* Sombra */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right,var(--cor1),transparent);      /* Gradiente para o título */
+    text-indent: 10px;
+}
+
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align:justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display:block;
+    margin:auto;
+}
+
+/* Estilos da seção de vídeo */
+div.video{
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/* Estilos da barra lateral */
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';        /* Marc
